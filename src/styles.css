@@ -1,0 +1,11 @@
+body {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.container {
+  margin-top: 10%;
+}

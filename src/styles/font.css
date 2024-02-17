@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'SFPRODISPLAYREGULAR';
+  src:
+    local('SFPRODISPLAYREGULAR'),
+    url('../assets/fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+}
+
+@font-face {
+  font-family: 'SFPRODISPLAYMEDIUM';
+  src:
+    local('SFPRODISPLAYMEDIUM'),
+    url('../assets/fonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+}

@@ -1,0 +1,133 @@
+@import url('../../styles/font.css');
+
+.nav-container {
+  display: flex;
+  z-index: 999;
+  height: 250px;
+  background-color: #fff;
+  justify-content: center;
+  justify-content: flex-start; /* Align items to the start */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.element-container {
+  list-style-type: none;
+  display: flex;
+}
+
+.list-element,
+.active {
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  height: 90px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'SFPRODISPLAYMEDIUM';
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 20%;
+  flex-shrink: 0;
+}
+
+.list-element:hover {
+  border: 3px solid #53a9ff;
+}
+
+.active {
+  background-color: #f7fbff;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #eee;
+  border-radius: 100%;
+  padding: 6px;
+  background-color: #fff;
+}
+
+.spin-circle {
+  animation: border-animation 0.2s forwards;
+  border: 1px solid transparent; /* Start with a transparent border */
+}
+
+.spin-circle-back {
+  animation: border-animation-back 0.2s backwards;
+}
+
+@keyframes border-animation-back {
+  0% {
+    border-bottom-color: #53a9ff; /* Start drawing from the bottom */
+    border-top-color: #eee;
+    border-left-color: #53a9ff;
+    border-right-color: #53a9ff;
+  }
+  25% {
+    border-bottom-color: #53a9ff; /* Draw towards the bottom-right */
+    border-top-color: #eee;
+    border-left-color: #eee;
+    border-right-color: #53a9ff;
+  }
+  50% {
+    border-bottom-color: #eee; /* Draw towards the top-right */
+    border-top-color: #eee;
+    border-left-color: #eee;
+    border-right-color: #53a9ff;
+  }
+  75% {
+    border-bottom-color: #eee; /* Draw towards the top-left */
+    border-top-color: #eee;
+    border-left-color: #eee;
+    border-right-color: #eee;
+  }
+  100% {
+    border-bottom-color: #eee; /* Draw towards the top-left */
+    border-top-color: #eee;
+    border-left-color: #eee;
+    border-right-color: #eee;
+  }
+}
+@keyframes border-animation {
+  0% {
+    border-bottom-color: transparent; /* Start drawing from the bottom */
+    border-top-color: #53a9ff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  25% {
+    border-bottom-color: transparent; /* Draw towards the bottom-right */
+    border-top-color: #53a9ff;
+    border-left-color: #53a9ff;
+    border-right-color: transparent;
+  }
+  50% {
+    border-bottom-color: #53a9ff; /* Draw towards the top-right */
+    border-top-color: #53a9ff;
+    border-left-color: #53a9ff;
+    border-right-color: transparent;
+  }
+  75% {
+    border-bottom-color: #53a9ff; /* Draw towards the top-left */
+    border-top-color: #53a9ff;
+    border-left-color: #53a9ff;
+    border-right-color: #53a9ff;
+  }
+  100% {
+    border-bottom-color: #53a9ff; /* Draw towards the top-left */
+    border-top-color: #53a9ff;
+    border-left-color: #53a9ff;
+    border-right-color: #53a9ff;
+  }
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 16px;
+  line-height: 24px;
+}
